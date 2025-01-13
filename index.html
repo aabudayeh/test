@@ -3,90 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AIRDeM: First International Workshop on AI for Research Data Management">
-    <title>AIRDeM 2025</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>AIRDeM: First International Workshop on AI for Research Data Management</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
         }
         header {
-            background: #007BFF;
-            color: #fff;
-            padding: 20px 0;
+            background-color: #0056b3;
+            color: white;
+            padding: 1rem;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        nav {
+            background-color: #003d80;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
         }
         section {
-            padding: 20px;
+            padding: 2rem;
+        }
+        h1, h2, h3 {
+            color: #003d80;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            padding: 1rem;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
         footer {
+            background-color: #003d80;
+            color: white;
             text-align: center;
-            padding: 10px;
-            background: #f1f1f1;
+            padding: 1rem 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>AIRDeM 2025</h1>
-        <p>First International Workshop on AI for Research Data Management</p>
+        <h1>AIRDeM: First International Workshop on AI for Research Data Management</h1>
+        <p>In collaboration with ESWC 2025</p>
+        <p>June 2025, Heraklion, Greece</p>
     </header>
+    <nav>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <a href="#topics">Workshop Topics</a>
+            <div class="dropdown-content">
+                <a href="#metadata-automation">Metadata Automation</a>
+                <a href="#fair-metrics">FAIR Metrics</a>
+                <a href="#metadata-quality">Metadata Quality</a>
+                <a href="#ai-question-answering">AI Question Answering</a>
+                <a href="#data-quality">Data Quality and Harmonization</a>
+            </div>
+        </div>
+        <a href="#goals">Goals</a>
+        <a href="#participation">Call for Participation</a>
+        <a href="#program">Program</a>
+        <a href="#committee">Organizing Committee</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section>
-        <h2>About AIRDeM</h2>
-        <p>
-            In today's data-driven research landscape, effective Research Data Management (RDM) practices are crucial for unlocking the full potential of innovative discoveries, while upholding the integrity and reproducibility of scientific work. 
-            The Artificial Intelligence for Research Data Management (AIRDeM) workshop explores the application of AI-driven solutions and interdisciplinary approaches for RDM, focusing on topics like automated metadata extraction, annotation, and generation. 
-        </p>
-        <p>
-            AIRDeM aims to gather research papers and practical implementations (demos) across multiple domains, including life sciences, earth sciences, and digital humanities. This workshop fosters interdisciplinary collaboration to address RDM challenges and advance FAIR (Findability, Accessibility, Interoperability, Reusability) practices through cutting-edge AI applications.
-        </p>
+    <section id="about">
+        <h2>About</h2>
+        <h3>Overview</h3>
+        <p>In today's data-driven research landscape, effective Research Data Management (RDM) practices are crucial for unlocking the full potential of innovative discoveries while upholding scientific integrity and reproducibility...</p>
+
+        <h3>Timeliness</h3>
+        <p>RDM is increasingly challenging due to data volume, heterogeneity, and a lack of scalable tools. LLMs and AI methods are revolutionizing data management by enabling automation in key areas...</p>
     </section>
 
-    <section>
-        <h2>Call for Contributions</h2>
-        <p>
-            We invite submissions in the following categories:
-        </p>
+    <section id="topics">
+        <h2>Workshop Topics</h2>
+
+        <h3 id="metadata-automation">Metadata Automation</h3>
+        <p>Discussing LLMs for metadata enrichment and improving accessibility.</p>
+
+        <h3 id="fair-metrics">FAIR Metrics</h3>
+        <p>Developing metrics to measure and improve FAIR compliance.</p>
+
+        <h3 id="metadata-quality">Metadata Quality</h3>
+        <p>Using knowledge graphs to enhance metadata quality and searchability.</p>
+
+        <h3 id="ai-question-answering">AI Question Answering for RDM</h3>
+        <p>AI-driven tools for navigation, summarization, and exploration.</p>
+
+        <h3 id="data-quality">Data Quality and Harmonization</h3>
+        <p>AI methods for handling missing, inconsistent, and heterogeneous data.</p>
+    </section>
+
+    <section id="goals">
+        <h2>Goals</h2>
+        <p>We invite attendees to contribute to the AIRDeM workshop at ESWC 2025 by submitting research papers, demos, and posters that employ AI to advance RDM practices...</p>
+    </section>
+
+    <section id="participation">
+        <h2>Call for Participation</h2>
+        <h3>Contribution Opportunities</h3>
+        <p>Submit research papers, demos, posters, or "Bring Your Challenge" abstracts.</p>
+
+        <h3>Submission Guidelines</h3>
+        <p>Details on formatting, deadlines, and how to submit will be provided soon.</p>
+    </section>
+
+    <section id="program">
+        <h2>Program</h2>
         <ul>
-            <li><strong>Research Papers:</strong> Innovative research on AI-driven solutions to RDM challenges or FAIR data practices.</li>
-            <li><strong>Demos:</strong> Real-world AI tools designed to improve RDM and FAIRification processes.</li>
-            <li><strong>Posters:</strong> Visual presentations highlighting insights, approaches, or tools for tackling RDM challenges.</li>
-            <li><strong>"Bring Your Challenge":</strong> Abstracts outlining RDM challenges to solve collaboratively during the workshop.</li>
+            <li>05 minutes - Welcome & Introduction</li>
+            <li>40 minutes - Invited Keynote Talk</li>
+            <li>30 minutes - Paper Presentations (Session 1)</li>
+            <li>30 minutes - Interactive "Bring Your Challenge"</li>
+            <li>30 minutes - Paper Presentations (Session 2)</li>
+            <li>30 minutes - Panel Discussion: AI’s Role in Transforming RDM</li>
+            <li>15 minutes - Wrap-up & Call to Action</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Program Overview</h2>
-        <p>The workshop includes:</p>
-        <ul>
-            <li>Keynote Talk</li>
-            <li>Paper Presentations</li>
-            <li>Interactive "Bring Your Challenge" Session</li>
-            <li>Panel Discussion</li>
-        </ul>
+    <section id="committee">
+        <h2>Organizing Committee</h2>
+        <p><strong>Hajira Jabeen</strong>: Lead of 'AI in Research Data Management' at UniKlinik Cologne...</p>
+        <p><strong>Damien Graux</strong>: Principal Research Scientist at Huawei Technologies...</p>
+        <p><strong>Ahmad Abu Dayeh</strong>: PhD Candidate in the BullNet Marie Curie Doctoral Training Network...</p>
+        <p><strong>Oya Beyan</strong>: Professor of Medical Informatics at the University of Cologne...</p>
     </section>
 
-    <section>
-        <h2>Workshop Details</h2>
-        <p>
-            AIRDeM will be held as part of the Extended Semantic Web Conference (ESWC). 
-            Stay tuned for updates on the exact date, location, and submission deadlines.
-        </p>
-        <p>
-            <a href="https://github.com/HajiraJabeen/BIK-AI4RDM/" target="_blank">Visit our GitHub Repository</a> for more information.
-        </p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For inquiries, please reach out to Hajira Jabeen at [email@example.com].</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 AIRDeM | Designed for ESWC</p>
+        <p>&copy; 2025 AIRDeM Workshop. All rights reserved.</p>
     </footer>
 </body>
 </html>
