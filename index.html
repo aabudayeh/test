@@ -4,155 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIRDeM 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            background-color: #0056b3;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        footer {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>AIRDeM 2025</h1>
+        <h2>First International Workshop on AI for Research Data Management</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="background.html">Background</a></li>
+                <li><a href="#call-for-participation">Call for Participation</a></li>
+                <li><a href="#organizing-committee">Organizing Committee</a></li>
+                <li><a href="#program">Program</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>AIRDeM 2025</h1>
-    <p>First International Workshop on AI for Research Data Management</p>
-</header>
+    <main>
+        <section id="about">
+            <h3>About</h3>
+            <p>In today's data-driven research landscape, effective Research Data Management (RDM) practices are crucial for unlocking the full potential of innovative discoveries, while upholding the integrity and reproducibility of scientific work. FAIR (Findability, Accessibility, Interoperability, and Reusability) principles help ensure that the data across applications remains discoverable, accessible and usable. The Artificial Intelligence for Research Data Management (AIRDeM) workshop explores the application of AI-driven solutions and interdisciplinary approaches for RDM, focussing on topics like automated metadata extraction, annotation, and generation. The workshop will explore how these AI techniques can help in improving data findability, accessibility, and quality, interpretability and searchability.</p>
+            <p>Practically, we invite papers covering methods using AI for enhancing, developing and measuring FAIR metrics to improve data discovery and interoperability. This may include AI-assisted metadata generation pipelines, the use of Knowledge Graphs (KGs) to enrich metadata and increase findability, as well as incorporation of AI driven questions answering to facilitate data exploration.</p>
+            <p>AIRDeM aims at gathering research papers and practical implementations (demos) across multiple domains, including life sciences, earth sciences, and digital humanities. In addition, the workshop will feature a collaborative shared task entitled "Bring Your Challenge." This initiative invites participants to present real-world RDM problems, such as metadata creation, FAIR compliance, or data interoperability, and provides a platform for the community to collaboratively explore AI-driven solutions. By fostering interdisciplinary collaboration, this shared task aims to generate innovative approaches to address pressing RDM challenges. By integrating Large Language models (LLMs), information extraction (IE), and neuro-symbolic AI with RDM practices, AIRDeM aims to foster an interdisciplinary community committed to addressing RDM challenges and advancing FAIR practices through cutting-edge AI applications.</p>
+        </section>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#background">Background</a>
-    <a href="#call-for-participation">Call for Participation</a>
-    <div class="dropdown">
-        <a href="#">Program</a>
-        <div class="dropdown-content">
-            <a href="#program">Proposed Program</a>
-            <a href="#committee">Organising Committee</a>
-            <a href="#tentative-pc">Tentative Program Committee</a>
-        </div>
-    </div>
-</nav>
+        <section id="call-for-participation">
+            <h3>Call for Participation</h3>
+            <p>We invite attendees to contribute to the AIRDeM workshop at the Extended Semantic Web Conference (ESWC), seeking original submissions in the form of research articles, demos, and posters. We are interested in both theoretical and practical approaches that employ AI to advance RDM practices.</p>
+            <ul>
+                <li><strong>Research Papers and Articles:</strong> Present innovative research that explores AI-driven solutions to RDM challenges or enhances FAIR data practices.</li>
+                <li><strong>Demos:</strong> Showcase real-world AI tools designed to improve RDM and FAIRification processes.</li>
+                <li><strong>Posters:</strong> Provide a visual presentation of your work, highlighting new insights, approaches, or tools for tackling RDM challenges.</li>
+                <li><strong>Bring Your Challenge:</strong> Submit an abstract outlining an RDM challenge you are facing, and participate in collaborative problem-solving during the workshop.</li>
+            </ul>
+        </section>
 
-<main>
-    <section id="about">
-        <h2>About</h2>
-        <p>In today's data-driven research landscape, effective Research Data Management (RDM) practices are crucial for unlocking the full potential of innovative discoveries, while upholding the integrity and reproducibility of scientific work. FAIR (Findability, Accessibility, Interoperability, and Reusability) principles help ensure that the data across applications remains discoverable, accessible and usable. The Artificial Intelligence for Research Data Management (AIRDeM) workshop explores the application of AI-driven solutions and interdisciplinary approaches for RDM, focussing on topics like automated metadata extraction, annotation, and generation. The workshop will explore how these AI techniques can help in improving data findability, accessibility, and quality, interpretability and searchability. 
-Practically, we invite papers covering methods using AI for enhancing, developing and measuring FAIR metrics to improve data discovery and interoperability. This may include AI-assisted metadata generation pipelines, the use of Knowledge Graphs (KGs) to enrich metadata and increase findability, as well as incorporation of AI driven questions answering to facilitate data exploration.
-AIRDeM aims at gathering research papers and practical implementations (demos) across multiple domains, including life sciences, earth sciences, and digital humanities. In addition, the workshop will feature a collaborative shared task entitled "Bring Your Challenge." This initiative invites participants to present real-world RDM problems, such as metadata creation, FAIR compliance, or data interoperability, and provides a platform for the community to collaboratively explore AI-driven solutions. By fostering interdisciplinary collaboration, this shared task aims to generate innovative approaches to address pressing RDM challenges. By integrating Large Language models (LLMs), information extraction (IE), and neuro-symbolic AI with RDM practices, AIRDeM aims to foster an interdisciplinary community committed to addressing RDM challenges and advancing FAIR practices through cutting-edge AI applications.
-</p>
-    </section>
+        <section id="organizing-committee">
+            <h3>Organizing Committee</h3>
+            <ul>
+                <li><strong>Hajira Jabeen (UniKlinik Cologne, Germany):</strong> Leads the AI in Research Data Management team within the Institute for Biomedical Informatics.</li>
+                <li><strong>Damien Graux (Huawei Technologies, UK):</strong> Principal research scientist at the Edinburgh Research Centre, contributing to Semantic Web technologies.</li>
+                <li><strong>Ahmad Abu Dayeh (UniKlinik Cologne):</strong> PhD candidate focusing on distributed machine learning, FAIR data management, privacy-preserving techniques, and knowledge graphs.</li>
+                <li><strong>Oya Beyan:</strong> Professor of Medical Informatics at the University of Cologne, focusing on FAIR data management and distributed analytics in medicine.</li>
+            </ul>
+        </section>
 
-    <section id="background">
-        <h2>Background</h2>
-        <p>RDM in the data intensive era has become increasingly challenging...</p>
-        <!-- Add remaining content here -->
-    </section>
+        <section id="program">
+            <h3>Proposed Program</h3>
+            <ul>
+                <li>05 minutes: Welcome & Introduction</li>
+                <li>40 minutes: Invited Keynote Talk</li>
+                <li>30 minutes: Paper Presentations (Session 1)</li>
+                <li>30 minutes: Interactive "Bring Your Challenge"</li>
+                <li>30 minutes: Paper Presentations (Session 2)</li>
+                <li>30 minutes: Panel Discussion: AI’s Role in Transforming RDM</li>
+                <li>15 minutes: Wrap-up & Call to Action</li>
+            </ul>
+        </section>
+    </main>
 
-    <section id="call-for-participation">
-        <h2>Call for Participation</h2>
-        <p>We invite attendees to contribute to the AIRDeM workshop at the Extended Semantic Web Conference (ESWC)...</p>
-        <!-- Add remaining content here -->
-    </section>
-
-    <section id="program">
-        <h2>Proposed Program</h2>
-        <p>Our aim is to host an interactive event that attracts participants interested in innovative applications of AI for RDM...</p>
-        <!-- Add remaining content here -->
-    </section>
-
-    <section id="committee">
-        <h2>Organising Committee</h2>
-        <p>Hajira Jabeen (UniKlinik Cologne, Germany, Contact person) leads the `AI in Research Data Management' team...</p>
-        <!-- Add remaining content here -->
-    </section>
-
-    <section id="tentative-pc">
-        <h2>Tentative Program Committee</h2>
-        <ul>
-            <li>Sébastien Montella, Huawei UKRD Ltd., United Kingdom</li>
-            <li>Wendi Zhou, University of Edinburgh, United Kingdom</li>
-            <li>Pavlos Vougiouklis, Huawei Technologies, United Kingdom</li>
-            <!-- Add remaining committee members -->
-        </ul>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 AIRDeM Workshop. All Rights Reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 AIRDeM Workshop | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
